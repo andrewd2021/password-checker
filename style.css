@@ -1,0 +1,114 @@
+*::before, *::after, * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: hsl(226, 95%, 17%);
+    color:white;
+    text-align: center;
+  }
+  .container {
+    width:100%;
+    margin:0 auto;
+  }
+  .strength-meter {
+    position: relative;
+    height: 2rem;
+    width: 90%;
+    border: 3px solid hsl(0, 94%, 19%);
+    border-radius: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .strength-meter::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: calc(1% * var(--strength, 0));
+    background-color: hsl(0, 81%, 54%);
+    transition: width 200ms;
+  }
+  
+  .password-input {
+    margin-top: 2rem;
+    width: 50%;
+    padding: 1rem .1rem;
+    background-color: hsl(0, 84%, 42%);
+    color: white;
+    border: 1px solid hsl(0, 86%, 72%);
+    outline: none;
+    text-align: center;
+    border-radius: .3rem;
+  }
+  
+  .password-input:focus {
+    border-color: hsl(261, 88%, 70%);
+  }
+  
+  .reasons > * {
+    margin-top: .5rem;
+    color:white;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Background Styles Only */
+  
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
+  
+  * {
+      font-family: Raleway;
+  }
+  
+  .side-links {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .side-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: white;
+    width: 180px;
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+  
+  .side-link-youtube {
+    background-color: red;
+  }
+  
+  .side-link-twitter {
+    background-color: #1DA1F2;
+  }
+  
+  .side-link-github {
+    background-color: #6e5494;
+  }
+  
+  .side-link-text {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .side-link-icon {
+    color: white;
+    font-size: 30px;
+  }
